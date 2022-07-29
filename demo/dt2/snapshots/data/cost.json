@@ -1,0 +1,34 @@
+[
+    {
+        "systemId": "001154d271e0f6164e000000000000000000000001",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "locationDetails": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "postalCode": 560001
+        },
+        "costDetails": {
+            "cost": 500,
+            "currencyType": null,
+            "depreciationStartDate": "2022-04-20 09:26:37.214382067 +0000 UTC",
+            "monthsToDepreciate": 24
+        }
+    },
+    {
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "customerId": "11b3853f6fb93cb5ea700be920bce469",
+        "locationDetails": {
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "USA",
+            "postalCode": 90001
+        },
+        "costDetails": {
+            "cost": 2000,
+            "currencyType": "USD",
+            "depreciationStartDate": "2022-04-20 09:26:37.214382067 +0000 UTC",
+            "monthsToDepreciate": 24
+        }
+    }
+]

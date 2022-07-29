@@ -1,0 +1,2 @@
+2022-07-29 09:58:35,257 : ERROR : logger : The value [ 0.00] for field [io_activity] should be [doubleType]
+2022-07-29 09:58:55,491 : WARNING : logger : Value MisMatch: [063a28a43105d127d7000000000000000000000002] The value [87f8983af93911eb864022cfbc47fbb] for field [customer_id] mismatched
