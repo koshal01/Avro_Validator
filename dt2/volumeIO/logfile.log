@@ -1,0 +1,77 @@
+2022-07-06 16:00:14,705 : ERROR : logger : The value [063a28a43105d127d7000000000000000000000002] for field [volumeid] does not match with value in input JSON
+2022-07-06 16:00:14,705 : ERROR : logger : The value [063a28a43105d127d7000000000000000000000001] for field [volumeid] does not match with value in input JSON
+2022-07-06 16:00:14,705 : ERROR : logger : The value [063a28a43105d127d7000000000000000000000003] for field [volumeid] does not match with value in input JSON
+2022-07-06 16:02:29,085 : ERROR : logger : 'customerId'
+2022-07-06 16:02:29,086 : ERROR : logger : 'customerId'
+2022-07-06 16:02:29,088 : ERROR : logger : 'customerId'
+2022-07-06 16:04:23,340 : ERROR : logger : 'customerId'
+2022-07-06 16:04:23,348 : ERROR : logger : 'customerId'
+2022-07-06 16:04:23,348 : ERROR : logger : 'customerId'
+2022-07-06 16:04:55,811 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:04:55,819 : ERROR : logger : 'collectionTimeUTC'
+2022-07-06 16:04:55,819 : ERROR : logger : 'collectionTimeUTC'
+2022-07-06 16:07:53,973 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:07:53,981 : ERROR : logger : The value [8327829012] for field [updateTime] does not match with value in input JSON
+2022-07-06 16:07:53,981 : ERROR : logger : The value [8327829012] for field [updateTime] does not match with value in input JSON
+2022-07-06 16:14:14,525 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:14:46,431 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:28:05,778 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:28:05,790 : ERROR : logger : unconverted data remains: .234467836
+2022-07-06 16:28:05,798 : ERROR : logger : unconverted data remains: .234467836
+2022-07-06 16:28:47,949 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:28:47,954 : ERROR : logger : unconverted data remains: .234467836
+2022-07-06 16:28:47,954 : ERROR : logger : unconverted data remains: .234467836
+2022-07-06 16:29:37,544 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:29:37,552 : ERROR : logger : unconverted data remains: 836
+2022-07-06 16:29:37,552 : ERROR : logger : unconverted data remains: 836
+2022-07-06 16:29:51,104 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:29:51,104 : ERROR : logger : time data '2022-09-23 04:06:23.234467836' does not match format '%Y-%m-%d %H:%M:%S.%f9'
+2022-07-06 16:29:51,112 : ERROR : logger : time data '2022-09-23 04:06:23.234467836' does not match format '%Y-%m-%d %H:%M:%S.%f9'
+2022-07-06 16:30:08,502 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:30:08,510 : ERROR : logger : unconverted data remains: 7836
+2022-07-06 16:30:08,510 : ERROR : logger : unconverted data remains: 7836
+2022-07-06 16:30:22,573 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:30:22,582 : ERROR : logger : time data '2022-09-23 04:06:23.234467836' does not match format '%Y-%m-%d %H:%M:%S.%f10'
+2022-07-06 16:30:22,582 : ERROR : logger : time data '2022-09-23 04:06:23.234467836' does not match format '%Y-%m-%d %H:%M:%S.%f10'
+2022-07-06 16:30:59,234 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:33:52,997 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:35:35,341 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:35:35,341 : ERROR : logger : [8327829012] is not valid date or does not match format %Y-%m-%d %H:%M:%S.%f
+2022-07-06 16:35:35,349 : ERROR : logger : The value [1663905983.234467] for field [updateTime] should be [longType]
+2022-07-06 16:36:41,441 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:36:41,441 : ERROR : logger : [8327829012] is not valid date or does not match format %Y-%m-%d %H:%M:%S.%f
+2022-07-06 16:36:41,449 : ERROR : logger : The value [1663905983.234467] for field [updateTime] should be [longType]
+2022-07-06 16:36:57,178 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:36:57,186 : ERROR : logger : [8327829012] is not valid date or does not match format %Y-%m-%d %H:%M:%S.%f
+2022-07-06 16:37:52,419 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:37:52,424 : ERROR : logger : [8327829012] is not equivalent in millisecond of given input datetime
+2022-07-06 16:38:15,771 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-06 16:38:15,779 : ERROR : logger : [8327829012] is not equivalent in millisecond of given input datetime [2022-09-23 04:06:23.234467]
+2022-07-07 10:54:02,377 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:43:21,714 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:43:21,723 : ERROR : logger : unconverted data remains: 986 +0000 UTC
+2022-07-07 16:43:21,731 : ERROR : logger : unconverted data remains: 986 +0000 UTC
+2022-07-07 16:43:51,096 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:43:51,112 : ERROR : logger : [8327829012] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:43:51,121 : ERROR : logger : [1663905983] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:44:26,784 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:44:26,800 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:44:26,800 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:44:36,819 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:44:36,835 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:44:36,835 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:46:24,056 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:46:24,064 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:46:24,084 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:47:48,887 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:47:48,899 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:47:48,900 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:48:09,253 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:48:09,262 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:48:09,266 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:50:05,546 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:50:05,567 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:50:05,572 : ERROR : logger : [1653506516986] is not equivalent in millisecond of given input datetime [2022-05-25 03:26:35]
+2022-07-07 16:51:33,540 : ERROR : logger : The value [5.5] for field [ioActivity] should be [intType]
+2022-07-07 16:53:02,312 : ERROR : logger : The value [16] for field [ioActivity] should be [doubleType]
+2022-07-07 16:53:02,320 : ERROR : logger : The value [23] for field [ioActivity] should be [doubleType]

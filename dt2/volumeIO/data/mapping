@@ -1,0 +1,9 @@
+dt2volumeIOdata
+    .as("dt2vio")
+    .select(
+        col("dt2vio.customerId") as "customer_id",
+        col("dt2vio.systemId") as "system_id",
+        col("dt2vio.volumeId") as "volume_id",
+        round(col("dt2vio.iops.total.avg_latest"),2) as "io_activity",
+        to_timestamp(col("dt2vio.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long") * 1000 as "update_time"
+    ).as[TSDBVolIO]  

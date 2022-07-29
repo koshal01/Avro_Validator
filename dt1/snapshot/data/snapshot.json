@@ -1,0 +1,1066 @@
+[
+    {
+        "id": "503ee381e14b3e3ac77c479743dbf5b1",
+        "volumeId": "9b886ab9ee4b900e8701a4313a1203f9",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120601",
+        "snapshotId": 3914,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1750.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    },
+    {
+        "id": "796afcab61d74f8383e3eef05d2bf648",
+        "volumeId": "9b886ab9ee4b900e8701a4313a1203f9",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120602",
+        "snapshotId": 3915,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1470.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    },
+    {
+        "id": "d00770d889fe4e94b0fdd3fda924542a",
+        "volumeId": "9b886ab9ee4b900e8701a4313a1203f9",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120603",
+        "snapshotId": 3916,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1830.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    },
+    {
+        "id": "7989e19dc1cc48e8bf52c99f40659a1d",
+        "volumeId": "9a03ba0a57dc3cf4077f8d763205e29a",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120604",
+        "snapshotId": 3917,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1290.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "503ee381e14b3e3ac77c479743dbf5b2",
+        "volumeId": "9a03ba0a57dc3cf4077f8d763205e29a",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120605",
+        "snapshotId": 3918,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1580.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "c562e2f22c5447d295c09e4ee9e4e919",
+        "volumeId": "9a03ba0a57dc3cf4077f8d763205e29a",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120606",
+        "snapshotId": 3919,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1230.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "2bbd03bbd0ba44369d8e1da61b06649d",
+        "volumeId": "9a03ba0a57dc3cf4077f8d763205e29a",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120607",
+        "snapshotId": 3920,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1390.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "b36fcb18acff45e089f837fce08c6a4e",
+        "volumeId": "f9b994272a4c4dd9bdcd4a0f00a43c49",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120608",
+        "snapshotId": 3921,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1870.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "a334a02048244db1a56c05d72a01d08a",
+        "volumeId": "f9b994272a4c4dd9bdcd4a0f00a43c49",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120609",
+        "snapshotId": 3922,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1910.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "c6c35ce2fad347cbab2be9b87cb4678a",
+        "volumeId": "f9b994272a4c4dd9bdcd4a0f00a43c49",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120610",
+        "snapshotId": 3923,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1410.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "86b389bc01414216816a52c3117dcbe4",
+        "volumeId": "f9b994272a4c4dd9bdcd4a0f00a43c49",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120611",
+        "snapshotId": 3924,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1500.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "ef406ce756584058baea739687637083",
+        "volumeId": "ea77085d4f1a4a1a87d9f324f7addafb",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120612",
+        "snapshotId": 3925,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1780.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "6b0e5e66cd9d41e882fba28580275336",
+        "volumeId": "ea77085d4f1a4a1a87d9f324f7addafb",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120613",
+        "snapshotId": 3926,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1280.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "631bfe9e7a4346db9e23b77842f10ab9",
+        "volumeId": "ea77085d4f1a4a1a87d9f324f7addafb",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120614",
+        "snapshotId": 3927,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1350.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "e7396d452e2946aab313478dac660a7f",
+        "volumeId": "ea77085d4f1a4a1a87d9f324f7addafb",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120615",
+        "snapshotId": 3928,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1600.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "235b8784839e44ee93c3030ec5c4c158",
+        "volumeId": "e5ef7bbb253e44dfa1651e8723810ca2",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120616",
+        "snapshotId": 3929,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1820.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "165b6d7b5be2470abc32df82e4602f18",
+        "volumeId": "e5ef7bbb253e44dfa1651e8723810ca2",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120617",
+        "snapshotId": 3930,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1720.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "9840b417720f48d896c60ce9f4086c2d",
+        "volumeId": "e5ef7bbb253e44dfa1651e8723810ca2",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120618",
+        "snapshotId": 3931,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1290.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "3732d555e6444beaabf239223b0ccd71",
+        "volumeId": "e5ef7bbb253e44dfa1651e8723810ca2",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120619",
+        "snapshotId": 3932,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1750.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "af73a680c0244e6bbebd668c55a27a67",
+        "volumeId": "e68d6074442e48c3a128e03ea3e6e8cd",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120620",
+        "snapshotId": 3933,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1620.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "49e730467de8447faa62db294abf06bc",
+        "volumeId": "e68d6074442e48c3a128e03ea3e6e8cd",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120621",
+        "snapshotId": 3934,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1830.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "bfb4d7f279884e80be3e872c33e4716c",
+        "volumeId": "e68d6074442e48c3a128e03ea3e6e8cd",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120622",
+        "snapshotId": 3935,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1100.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "ceec158583a14e8a98a14190e1a52ce1",
+        "volumeId": "e68d6074442e48c3a128e03ea3e6e8cd",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120623",
+        "snapshotId": 3936,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1210.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "4ae32cdf95b04d7d9b8da5012cfd6f0b",
+        "volumeId": "db9d7a5392f6c09f0677758fafeb0cb2",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120624",
+        "snapshotId": 3937,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1420.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "13ee7418ad934ab284f2cd4b437bf448",
+        "volumeId": "db9d7a5392f6c09f0677758fafeb0cb2",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120625",
+        "snapshotId": 3938,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1870.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "2af674a5b4d8407c82d704ad041eccb3",
+        "volumeId": "db9d7a5392f6c09f0677758fafeb0cb2",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120626",
+        "snapshotId": 3939,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1910.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "6431c4fa96d8444dab8c0bb414393b3d",
+        "volumeId": "db9d7a5392f6c09f0677758fafeb0cb2",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120627",
+        "snapshotId": 3940,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1410.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "082d541bcbd045e88f1504b331cb8ba5",
+        "volumeId": "97187a8a3698971f9c32bf1544be641z",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120628",
+        "snapshotId": 3941,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1500.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "c4274d27cbd640fe8652436e995e59a9",
+        "volumeId": "97187a8a3698971f9c32bf1544be641z",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120629",
+        "snapshotId": 3942,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1780.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "23838d8ebe2e4d5086d4588ed8cb104e",
+        "volumeId": "97187a8a3698971f9c32bf1544be641z",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120630",
+        "snapshotId": 3943,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1280.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "d7cb45b86e4845f49954ff487612c40a",
+        "volumeId": "97187a8a3698971f9c32bf1544be641z",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120631",
+        "snapshotId": 3944,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1350.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "d39f48074d724b22ab83cff47d177ae4",
+        "volumeId": "b70b42b9bb38143808611a7ccfd8d89m",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120632",
+        "snapshotId": 3945,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1600.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "6913928d019b4086bb0f8abd06fe7d4b",
+        "volumeId": "b70b42b9bb38143808611a7ccfd8d89m",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120633",
+        "snapshotId": 3946,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1820.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "fb6e1c98b5c54a6ebbe8446b50085ac9",
+        "volumeId": "b70b42b9bb38143808611a7ccfd8d89m",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120634",
+        "snapshotId": 3947,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1720.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "bb05aead1d6f4d0bb0ca49495fc32f03",
+        "volumeId": "b70b42b9bb38143808611a7ccfd8d89m",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120635",
+        "snapshotId": 3948,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1620.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC00000000000000F4A0001DE05"
+    },
+    {
+        "id": "a513f241a26a42d4ac5c0415fb0f86dd",
+        "volumeId": "57bebb667146ce6c57511a20a009bb47",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120636",
+        "snapshotId": 3949,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1830.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    },
+    {
+        "id": "2184378827b0484a92b04c7a9cf36465",
+        "volumeId": "57bebb667146ce6c57511a20a009bb47",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120637",
+        "snapshotId": 3950,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1100.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    },
+    {
+        "id": "1276e4d79e8a4becb99a3f3b57a424ca",
+        "volumeId": "57bebb667146ce6c57511a20a009bb47",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "displayname": "Virtual Volume ChinmayVolumeClone.220323120638",
+        "snapshotId": 3951,
+        "healthState": 3,
+        "state": {
+            "overall": "STATE_NORMAL"
+        },
+        "creationTime": {
+            "Ms": 1648017361000,
+            "Tz": "Asia/Kolkata"
+        },
+        "expirationTime": null,
+        "usedSizeMiB": 0.0,
+        "sizeMiB": 1530.0,
+        "parentID": 3912,
+        "physParentID": -2,
+        "snapshotType": "VVTYPE_SNAPSHOT",
+        "physicalCopy": false,
+        "readOnly": false,
+        "baseId": 3912,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC",
+        "wwn": "60002AC0000000000000000F0007E992"
+    }
+]

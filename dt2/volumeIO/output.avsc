@@ -1,0 +1,77 @@
+{
+    "name": "perfomance_output",
+    "type": "record",
+    "namespace": "com.acme.avro",
+    "fields": [
+        {
+            "name": "mapping",
+            "type": ["null", "string"],
+            "default": null,
+            "validator": {
+                "input_field" : [["volumeId"]],
+                "output_field" : [["volume_id"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "customer_id",
+            "type": {
+                "type": "string",
+                "logicalType": "customer_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["customerId"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "system_id",
+            "type": {
+                "type": "string",
+                "logicalType": "system_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["systemId"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "volume_id",
+            "type": {
+                "type": "string",
+                "logicalType": "volume_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["volumeId"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "io_activity",
+            "type": {
+                "type": "double",
+                "logicalType": "io_activity"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["iops-total-avg_latest"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "update_time",
+            "type": {
+                "type": "long",
+                "logicalType": "update_time"
+            },
+            "validator": {
+                "aggregator": [["epochConverter", 1, 1]],
+                "input_field": [["collectionTimeUTC"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        }
+    ]
+}

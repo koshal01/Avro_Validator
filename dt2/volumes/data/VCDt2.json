@@ -1,0 +1,54 @@
+[
+    {
+        "id": "073a28a43105d127d7000000000000000000000005",
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "name": "panorama-collection",
+        "full_name": "panorama-collection",
+        "app_server": "",
+        "app_id": "",
+        "app_cluster_name": "",
+        "app_service_name": "",
+        "creation_time": 1657012638000,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "073a28a43105d127d7000000000000000000000005",
+        "systemId": "003a28a43105d127d7000000000000000000000002",
+        "name": "panorama-collection",
+        "full_name": "panorama-collection",
+        "app_server": "",
+        "app_id": "",
+        "app_cluster_name": "",
+        "app_service_name": "",
+        "creation_time": 1657012638000,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "073a28a43105d127d7000000000000000000000005",
+        "systemId": "003a28a43105d127d7000000000000000000000003",
+        "name": "panorama-collection",
+        "full_name": "panorama-collection",
+        "app_server": "",
+        "app_id": "",
+        "app_cluster_name": "",
+        "app_service_name": "",
+        "creation_time": 1657012638000,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "073a28a43105d127d7000000000000000000000005",
+        "systemId": "003a28a43105d127d7000000000000000000000004",
+        "name": "panorama-collection",
+        "full_name": "panorama-collection",
+        "app_server": "",
+        "app_id": "",
+        "app_cluster_name": "",
+        "app_service_name": "",
+        "creation_time": 1657012638000,
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    }
+]

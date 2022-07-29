@@ -1,0 +1,272 @@
+[
+    {
+        "volumeId": "9b886ab9ee4b900e8701a4313a1203f9",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 9.3,
+                "avgOf1hour": 9.2,
+                "avgOf8hours": 9.1,
+                "avgOf1day": 9.0
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "9a03ba0a57dc3cf4077f8d763205e29a",
+        "systemId": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 7.8,
+                "avgOf1hour": 7.5,
+                "avgOf8hours": 7.6,
+                "avgOf1day": 7.5
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "f9b994272a4c4dd9bdcd4a0f00a43c49",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 12.4,
+                "avgOf1hour": 12.8,
+                "avgOf8hours": 12.9,
+                "avgOf1day": 11.8
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "ea77085d4f1a4a1a87d9f324f7addafb",
+        "systemId": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 10.9,
+                "avgOf1hour": 10.5,
+                "avgOf8hours": 10.2,
+                "avgOf1day": 9.9
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "e5ef7bbb253e44dfa1651e8723810ca2",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 11.8,
+                "avgOf1hour": 11.3,
+                "avgOf8hours": 11.2,
+                "avgOf1day": 10.8
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "e68d6074442e48c3a128e03ea3e6e8cd",
+        "systemId": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 18.5,
+                "avgOf1hour": 18.3,
+                "avgOf8hours": 18.2,
+                "avgOf1day": 18.0
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "db9d7a5392f6c09f0677758fafeb0cb2",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 15.7,
+                "avgOf1hour": 15.4,
+                "avgOf8hours": 15.3,
+                "avgOf1day": 15.1
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "97187a8a3698971f9c32bf1544be641z",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 14.8,
+                "avgOf1hour": 14.5,
+                "avgOf8hours": 14.2,
+                "avgOf1day": 13.9
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "b70b42b9bb38143808611a7ccfd8d89m",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 9.5,
+                "avgOf1hour": 9.3,
+                "avgOf8hours": 9.0,
+                "avgOf1day": 8.7
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "volumeId": "57bebb667146ce6c57511a20a009bb47",
+        "systemId": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "iops": {
+            "read": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            },
+            "total": {
+                "avgOfLatest": 16.6,
+                "avgOf1hour": 16.4,
+                "avgOf8hours": 16.4,
+                "avgOf1day": 16.3
+            },
+            "write": {
+                "avgOfLatest": 0.0,
+                "avgOf1hour": 0.0,
+                "avgOf8hours": 0.0,
+                "avgOf1day": 0.0
+            }
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    }
+]

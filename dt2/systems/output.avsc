@@ -1,0 +1,317 @@
+{
+    "name": "MyClass",
+    "type": "record",
+    "namespace": "com.acme.avro",
+    "fields": [
+        {
+            "name": "mapping",
+            "type": ["null", "string"],
+            "default": null,
+            "validator": {
+                "input_field" : [["id"], ["arrayId", "customerId"]],
+                "output_field" : [["system_id"], ["system_id", "customer_id"]],
+                "input_filepath": ["data/systemsDt2.json", "data/cost.json"]
+            }
+        },
+        {
+            "name": "system_id",
+            "type": {
+                "type": "string",
+                "logicalType": "system_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["id"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "customer_id",
+            "type": {
+                "type": "string",
+                "logicalType": "customer_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["customerId"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "name",
+            "type": {
+                "type": "string",
+                "logicalType": "name"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["name"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "currency",
+            "type": {
+                "type": "string",
+                "logicalType": "currency"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-currencyType"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "city",
+            "type": {
+                "type": "string",
+                "logicalType": "city"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-city"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "state",
+            "type": {
+                "type": "string",
+                "logicalType": "state"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-state"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "country",
+            "type": {
+                "type": "string",
+                "logicalType": "country"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-country"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "months_to_depreciate",
+            "type": {
+                "type": "int",
+                "logicalType": "months_to_depreciate"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-monthsToDepreciate"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [0]
+            }
+        },
+        {
+            "name": "depreciation_start_date",
+            "type": {
+                "type": "string",
+                "logicalType": "depreciation_start_date"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-depreciationStartDate"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "is_depreciated",
+            "type": {
+                "type": "boolean",
+                "logicalType": "is_depreciated"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["addMonth", 1, 2], ["compare", 3, 1]],
+                "relational_operator": ["", "", "lessThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate"]],
+                "input_filepath": ["data/cost.json"],
+                "compare_val": ["", "", "current_date"],
+                "output_cmp_with": [true, false],
+                "null_val_cmp": [true]
+            }
+        },
+        {
+            "name": "postal_code",
+            "type": {
+                "type": "int",
+                "logicalType": "postal_code"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-postalCode"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "loc_lattitude",
+            "type": {
+                "type": "string",
+                "logicalType": "loc_lattitude"
+            },
+            "validator": {
+                "aggregator": [["passing", 1, 1]]
+            }
+        },
+        {
+            "name": "loc_longitude",
+            "type": {
+                "type": "string",
+                "logicalType": "loc_longitude"
+            },
+            "validator": {
+                "aggregator": [["passing", 1, 1]]
+            }
+        },
+        {
+            "name": "device_type",
+            "type": {
+                "type": "string",
+                "logicalType": "device_type"
+            },
+            "validator": {
+                "aggregator": [["directCompare", 1, 1]],
+                "compare_val": ["deviceType2"]
+            }
+        },
+        {
+            "name": "capacity_used",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_used"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["usage"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "capacity_total",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_total"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["usable_capacity_bytes"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "capacity_free",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_free"
+            },
+            "validator": {
+                "aggregator": [["subtract", 1, 2]],
+                "input_field": [["usable_capacity_bytes", "usage"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            } 
+        },
+        {
+            "name": "domain_name",
+            "type": {
+                "type": "string",
+                "logicalType": "domain_name"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["domain_name"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "current_version",
+            "type": {
+                "type": "string",
+                "logicalType": "current_version"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["version_current"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "cost",
+            "type": {
+                "type": "double",
+                "logicalType": "cost"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-cost"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [0.00]
+            }
+        },
+        {
+            "name": "cost_per_gb",
+            "type": {
+                "type": "double",
+                "logicalType": "cost_per_gb"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["addMonth", 1, 2], ["compare", 5, 1], ["divide", 3, 2], ["multiply", 7, 1]],
+                "relational_operator": ["", "", "", "", "greaterThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"]],
+                "input_filepath": ["data/cost.json", "data/systemsDT2.json"],
+                "compare_val": ["", "", "", "", "current_date"],
+                "number": ["", "", "", "", "", "", 1000000000],
+                "intermediate_cmp_with": ["", "", "", "", 0.00, "", ""],
+                "null_val_cmp": [0.00]
+            }
+        },
+        {
+            "name": "update_time",
+            "type": {
+                "type": "long",
+                "logicalType": "update_time"
+            },
+            "validator": {
+                "aggregator": [["epochConverter", 1, 1]],
+                "input_field": [["collectionTimeUTC"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "partitionKey",
+            "type": {
+                "type": "string",
+                "logicalType": "partitionKey"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["partitionKey"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "collection_id",
+            "type": {
+                "type": "string",
+                "logicalType": "collection_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["collectionId"]],
+                "input_filepath": ["data/systemsDt2.json"]
+            }
+        }
+    ]
+}

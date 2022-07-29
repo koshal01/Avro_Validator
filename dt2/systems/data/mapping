@@ -1,0 +1,49 @@
+systemdata
+    .as("syt")
+    .join(costAndLocationData.as("costLocdt2"),systemdata("id") === costAndLocationData("arrayId") && systemdata("customerId") === costAndLocationData("customerId") ,"left")
+    .select(
+        col("syt.id") as "system_id",
+        col("syt.customerId") as "customer_id",
+        col("syt.name") as "name",
+        when(col("costLocdt2.currencyType").isNull,"").otherwise(col("costLocdt2.currencyType")).alias("currency"),
+        when(col("costLocdt2.city").isNull,"").otherwise(col("costLocdt2.city")).alias("city"),
+        when(col("costLocdt2.state").isNull,"").otherwise(col("costLocdt2.state")).alias("state"),
+        when(col("costLocdt2.country").isNull,"").otherwise(col("costLocdt2.country")).alias("country"),
+        when(col("costLocdt2.monthsToDepreciate").isNull,0).otherwise(col("costLocdt2.monthsToDepreciate")).alias("months_to_depreciate"),
+        when(col("costLocdt2.depreciationStartDate").isNull,"").otherwise(col("costLocdt2.depreciationStartDate")).alias("depreciation_start_date"),
+        when(col("costLocdt2.depreciationStartDate").isNull,true).
+            when(date_format(current_timestamp(),"yyyy-MM-dd") > add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"),
+            col("costLocdt2.monthsToDepreciate")), true).otherwise(false).alias("is_depreciated"),
+        when(col("costLocdt2.postalCode").isNull, 0).otherwise(col("costLocdt2.postalCode")).alias("postal_code"),
+        lit("") as "loc_lattitude",
+        lit("") as "loc_longitude",
+        lit("deviceType2") as "device_type",
+        col("syt.usage").cast("Double") as "capacity_used",
+        col("syt.usable_capacity_bytes").cast("Double") as "capacity_total",
+        (col("syt.usable_capacity_bytes") - col("syt.usage")).cast("Double") as "capacity_free",
+        col("syt.domain_name") as "domain_name",
+        col("syt.version_current") as "current_version",
+        when(col("costLocdt2.cost").isNull, 0.0).otherwise(col("costLocdt2.cost").cast("Double")).alias("cost"),
+        when(col("costLocdt2.depreciationStartDate").isNull, 0.00).
+            when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLocdt2.monthsToDepreciate")), 
+            round((col("costLocdt2.cost") / col("syt.usable_capacity_bytes") / 1073741824),2)).otherwise(0.00).alias("cost_per_gb"),
+        to_timestamp(col("syt.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long")*1000 as "update_time",
+        col("syt.partitionKey") as "partitionKey",
+        col("syt.collectionId") as "collection_id"
+    ).as[RDBSystems]
+
+?new Logic
+when(col("costLocdt2.depreciationStartDate").isNull, 0.00).
+    when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLocdt2.monthsToDepreciate")), 
+    round((col("costLocdt2.cost") / col("syt.usable_capacity_bytes") / 1000000000),2)).otherwise(0.00).alias("cost_per_gb"),
+
+
+
+            v == volumesDt2
+                    input     output
+snapshotsDt2.json 
+systemsDT2.json   id        systemid
+VCDt2.json        systemId  systemid
+volumeIODt2.json  volumeId  volumeid
+volumesDt2.json   volumeId  volumeid
+cost              systemId  systemid

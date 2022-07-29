@@ -1,0 +1,40 @@
+snapshotdata
+    .as("snp")
+    .join(costAndLocationData.as("costLocdt2"), snapshotdata("systemId") === costAndLocationData("arrayId") && snapshotdata("customerId") === costAndLocationData("customerId"), "left")
+    .join(dt2systemdataset.as("syt"), col("snp.systemId") === col("syt.id") && col("snp.collectionId") === col("syt.collectionId"), "left")
+    .select(
+        col("snp.id") as "snapshot_id",
+        col("snp.vol_id") as "volume_id",
+        col("snp.customerId") as "customer_id",
+        col("snp.systemId") as "system_id",
+        col("snp.name") as "name",
+        when((col("snp.schedule_id") === "" && col("snp.schedule_name") === ""), false).otherwise(true).alias("has_snapshot_chain"),
+        when(col("snp.is_manually_managed") === "true",true).otherwise(false).alias("is_adhoc"),
+        col("snp.online") as "is_online",
+        col("snp.size").cast("Double") as "size",
+        when(col("costLocdt2.depreciationStartDate").isNull || col("syt.usable_capacity_bytes").isNull , 0.00).
+            when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLocdt2.monthsToDepreciate")), 
+            round((col("costLocdt2.cost") / (col("syt.usable_capacity_bytes"))) * col("snp.size"),2)).otherwise(0.00).alias("cost"),
+        when(col("costLocdt2.depreciationStartDate").isNull || col("syt.usable_capacity_bytes").isNull , 0.00).
+            when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLocdt2.monthsToDepreciate")), 
+            round((col("costLocdt2.cost") / (col("syt.usable_capacity_bytes") / 1073741824)),2)).otherwise(0.00).alias("cost_per_gb"),
+        when(col("costLocdt2.currencyType").isNull,"").otherwise(col("costLocdt2.currencyType")).alias("currency"),
+        col("snp.creation_time") as "creation_time",
+        to_timestamp(col("snp.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long")*1000 as "update_time",
+        col("snp.partitionKey") as "partitionKey",
+        col("snp.collectionId") as "collection_id"
+    ).as[RDBSnapshots]
+
+?new logic
+when(col("costLocdt2.depreciationStartDate").isNull || col("syt.usable_capacity_bytes").isNull , 0.00).
+    when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLocdt2.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLocdt2.monthsToDepreciate")), 
+    round((col("costLocdt2.cost") / (col("syt.usable_capacity_bytes") / 1000000000)),2)).otherwise(0.00).alias("cost_per_gb"),
+
+
+                    input     output
+snapshotsDt2.json 
+systemsDT2.json     id        systemid
+VCDt2.json          systemId  systemid
+volumeIODt2.json    volumeId  volumeid
+volumesDt2.json     volumeId  volumeid
+cost                systemId  systemid

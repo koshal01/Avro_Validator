@@ -1,0 +1,9 @@
+dt1volumeIOdata
+.as("dt1vio")
+.select(
+    col("dt1vio.customerId") as "customer_id",
+    col("dt1vio.systemId") as "system_id",
+    col("dt1vio.volumeId") as "volume_id",
+    round(col("dt1vio.iops.total.avgOfLatest"),2) as "io_activity",
+    to_timestamp(col("dt1vio.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long") * 1000 as "update_time"
+)

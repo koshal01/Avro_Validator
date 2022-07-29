@@ -1,0 +1,227 @@
+{
+    "name": "MyClass",
+    "type": "record",
+    "namespace": "com.acme.avro",
+    "fields": [
+        {
+            "name": "mapping",
+            "type": ["null", "string"],
+            "default": null,
+            "validator": {
+                "input_field" : [["id"], ["arrayId", "customerId"], ["id", "collectionId"]],
+                "output_field" : [["snapshot_id"], ["system_id", "customer_id"], ["system_id", "collection_id"]],
+                "input_filepath": ["data/snapshotsDt2.json", "data/cost.json", "data/systemsDt2.json"]
+            }
+        },
+        {
+            "name": "snapshot_id",
+            "type": {
+                "type": "string",
+                "logicalType": "snapshot_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["id"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "volume_id",
+            "type": {
+                "type": "string",
+                "logicalType": "volume_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["vol_id"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "customer_id",
+            "type": {
+                "type": "string",
+                "logicalType": "customer_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["customerId"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "system_id",
+            "type": {
+                "type": "string",
+                "logicalType": "system_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["systemId"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "name",
+            "type": {
+                "type": "string",
+                "logicalType": "name"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["name"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "has_snapshot_chain",
+            "type": {
+                "type": "boolean",
+                "logicalType": "has_snapshot_chain"
+            },
+            "validator": {
+                "aggregator": [["compare", 1, 1], ["compare", 1, 1], ["logicalCompare", 3, 2]],
+                "relational_operator": ["equalTo", "equalTo"],
+                "logical_operator": ["and"],
+                "input_field": [["schedule_id", "schedule_name"]],
+                "input_filepath": ["data/snapshotsDT2.json"],
+                "compare_val": ["", ""],
+                "output_cmp_with": [false, true]
+            }
+        },
+        {
+            "name": "is_adhoc",
+            "type": {
+                "type": "boolean",
+                "logicalType": "is_adhoc"
+            },
+            "validator": {
+                "aggregator": [["passing", 1, 1], ["compare", 1, 1]],
+                "relational_operator": ["equalTo"],
+                "input_field": [["is_manually_managed"]],
+                "input_filepath": ["data/snapshotsDT2.json"],
+                "compare_val": ["true"],
+                "output_cmp_with": [true, false]
+            }
+        },
+        {
+            "name": "is_online",
+            "type": {
+                "type": "boolean",
+                "logicalType": "is_online"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["online"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "size",
+            "type": {
+                "type": "double",
+                "logicalType": "size"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["size"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "cost",
+            "type": {
+                "type": "double",
+                "logicalType": "cost"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["isNull", 4, 1], ["addMonth", 1, 2], ["compare", 6, 1], ["divide", 3, 2], ["multiply", 5, 1], ["multiply", 8, 2]],
+                "relational_operator": ["", "", "", "", "", "greaterThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"], ["size"]],
+                "input_filepath": ["data/cost.json", "data/systemsDT2.json", "data/snapshotsDT2.json"],
+                "compare_val": ["", "", "", "", "", "current_date"],
+                "number": ["", "", "", "", 1, "", "", ""],
+                "intermediate_cmp_with": ["", "", "", "", "", 0.00, "", ""],
+                "null_val_cmp": [0.00, "", "", 0.00]
+            }
+        },
+        {
+            "name": "cost_per_gb",
+            "type": {
+                "type": "double",
+                "logicalType": "cost_per_gb"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["isNull", 4, 1], ["addMonth", 1, 2], ["compare", 5, 1], ["divide", 3, 2], ["multiply", 7, 1]],
+                "relational_operator": ["", "", "", "", "greaterThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"]],
+                "input_filepath": ["data/cost.json", "data/systemsDT2.json"],
+                "compare_val": ["", "", "", "", "current_date"],
+                "number": ["", "", "", "", "", "", 1000000000],
+                "intermediate_cmp_with": ["", "", "", "", 0.00, "", ""],
+                "null_val_cmp": [0.00, "", "", 0.00]
+            }
+        },
+        {
+            "name": "currency",
+            "type": {
+                "type": "string",
+                "logicalType": "currency"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-currencyType"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "creation_time",
+            "type": {
+                "type": "long",
+                "logicalType": "creation_time"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["creation_time"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "update_time",
+            "type": {
+                "type": "long",
+                "logicalType": "update_time"
+            },
+            "validator": {
+                "aggregator": [["epochConverter", 1, 1]],
+                "input_field": [["collectionTimeUTC"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "partitionKey",
+            "type": {
+                "type": "string",
+                "logicalType": "partitionKey"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["partitionKey"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        },
+        {
+            "name": "collection_id",
+            "type": {
+                "type": "string",
+                "logicalType": "collection_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["collectionId"]],
+                "input_filepath": ["data/snapshotsDT2.json"]
+            }
+        }
+    ]
+}

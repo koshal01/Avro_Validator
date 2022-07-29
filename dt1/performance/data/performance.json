@@ -1,0 +1,203 @@
+[
+    {
+        "customerId": "87f8983af93911eb864022cfbc47faa1",
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "volumeId": "063a28a43105d127d7000000000000000000000001",
+        "latency": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "iops": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 23,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "throughput": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "collectionTimeUTC": "2022-05-25 03:26:35.178021986 +0000 UTC",
+        "requestUri": ""
+    },
+    {
+        "customerId": "87f8983af93911eb864022cfbc47fbb1",
+        "systemId": "003a28a43105d127d7000000000000000000000002",
+        "volumeId": "063a28a43105d127d7000000000000000000000002",
+        "latency": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "iops": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "throughput": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "collectionTimeUTC": "2022-05-25 03:26:35.078021986 +0000 UTC",
+        "requestUri": ""
+    },
+    {
+        "customerId": "87f8983af93911eb864022cfbc47fcc1",
+        "systemId": "003a28a43105d127d7000000000000000000000003",
+        "volumeId": "063a28a43105d127d7000000000000000000000003",
+        "latency": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "iops": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 789,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "throughput": {
+            "read": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "write": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            },
+            "total": {
+                "avg_latest": 0,
+                "avg_1hour": 0,
+                "avg_8hours": 0,
+                "avg_1day": 0
+            }
+        },
+        "collectionTimeUTC": "2022-05-25 03:26:35.078021986 +0000 UTC",
+        "requestUri": ""
+    }
+]

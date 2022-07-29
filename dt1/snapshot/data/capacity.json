@@ -1,0 +1,46 @@
+[
+    {
+        "id": "b14303cdf0aaac5dfcecc4e9aa43c710",
+        "systemid": "4UW0002888",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "capacityByTier": {
+            "totalUsed": 20890000000.0,
+            "usableCapacity": 280000000000.0
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "f6c09f06f0aaac5dfcecc47dc3cf4077",
+        "systemid": "4UW0002889",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "capacityByTier": {
+            "totalUsed": 45300000000.0,
+            "usableCapacity": 300000000000.0
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "dc3cf407f0aaac5dfce783ab10472ca3",
+        "systemid": "4UW0002890",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "capacityByTier": {
+            "totalUsed": 69060000000.0,
+            "usableCapacity": 320000000000.0
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "id": "7d52623aba8c6a787d6c78ba12786ce",
+        "systemid": "4UW0002891",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "capacityByTier": {
+            "totalUsed": 129390000000.0,
+            "usableCapacity": 570000000000.0
+        },
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    }
+]

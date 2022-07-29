@@ -1,0 +1,29 @@
+2022-07-15 16:59:24,194 : ERROR : logger : The value [4UW0002889] for field [system_id] does not match with value in input JSON
+2022-07-15 16:59:24,194 : ERROR : logger : The value [4UW0002888] for field [system_id] does not match with value in input JSON
+2022-07-15 20:58:29,566 : ERROR : logger : The value [USD] for field [currency] does not match with value in input JSON
+2022-07-15 21:00:43,171 : ERROR : logger : The value [Karnataka] for field [state] does not match with value in input JSON
+2022-07-15 21:02:48,627 : ERROR : logger : no value and no default for capacityUsed
+2022-07-15 21:05:44,729 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:06:08,903 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:07:41,960 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:07:50,750 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:11:34,974 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:12:12,279 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 21:12:53,615 : ERROR : logger : The value [259028370432.0] for field [capacity_total] does not match with value in input JSON
+2022-07-15 22:15:24,300 : ERROR : logger : For field - [capacity_free] Subtracted value does not match - [259028370432.0], [154889778592]
+2022-07-15 22:15:36,614 : ERROR : logger : no value and no default for domainName
+2022-07-15 22:16:35,620 : ERROR : logger : no value and no default for domainName
+2022-07-15 22:17:34,141 : ERROR : logger : an integer is required on field current_version
+2022-07-15 22:18:03,766 : ERROR : logger : 'systemid'
+2022-07-15 22:18:30,253 : ERROR : logger : For field - [cost_per_gb] Multiply value does not match - [12.0], [2.07]
+2022-07-15 22:19:01,260 : ERROR : logger : no value and no default for updateTime
+2022-07-15 22:19:41,841 : ERROR : logger : The value [1653527216986] for field [update_time] does not match with value in input JSON
+2022-07-15 22:20:01,800 : ERROR : logger : The value [1653527216986] for field [update_time] does not match with value in input JSON
+2022-07-26 18:33:18,870 : ERROR : logger : [003a28a43105d127d7000000000000000000000001] The values [003a28a43105d127d7000000000000000000000001] for field [system_id] does not match with value in input JSON
+2022-07-26 18:33:18,870 : ERROR : logger : [003a28a43105d127d7000000000000000000000002] The values [003a28a43105d127d7000000000000000000000002] for field [system_id] does not match with value in input JSON
+2022-07-26 18:33:18,870 : ERROR : logger : [003a28a43105d127d7000000000000000000000003] The values [003a28a43105d127d7000000000000000000000003] for field [system_id] does not match with value in input JSON
+2022-07-26 18:33:18,878 : ERROR : logger : [003a28a43105d127d7000000000000000000000004] The values [003a28a43105d127d7000000000000000000000004] for field [system_id] does not match with value in input JSON
+2022-07-26 18:34:39,408 : ERROR : logger : [003a28a43105d127d7000000000000000000000001] The values [003a28a43105d127d7000000000000000000000001] for field [system_id] does not match with value in input JSON
+2022-07-26 18:34:39,414 : ERROR : logger : [003a28a43105d127d7000000000000000000000002] The values [003a28a43105d127d7000000000000000000000002] for field [system_id] does not match with value in input JSON
+2022-07-26 18:34:39,418 : ERROR : logger : [003a28a43105d127d7000000000000000000000003] The values [003a28a43105d127d7000000000000000000000003] for field [system_id] does not match with value in input JSON
+2022-07-26 18:34:39,429 : ERROR : logger : [003a28a43105d127d7000000000000000000000004] The values [003a28a43105d127d7000000000000000000000004] for field [system_id] does not match with value in input JSON

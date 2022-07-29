@@ -1,0 +1,404 @@
+{
+    "name": "MyClass",
+    "type": "record",
+    "namespace": "com.acme.avro",
+    "fields": [
+        {
+            "name": "mapping",
+            "type": ["null", "string"],
+            "default": null,
+            "validator": {
+                "input_field" : [["id"], ["id", "collectionId"], ["volumeId", "collectionId"], ["id", "collectionId"], ["arrayId", "customerId"], ["volumeCollectionId", "collectionId"]],
+                "output_field" : [["volume_id"], ["vol_coll_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "collectionId"], ["system_id", "customer_id"],  ["vol_coll_id", "collection_id"]],
+                "input_filepath": ["data/volumesDt2.json", "data/VCDt2.json", "data/volumeIODt2.json", "data/systemsDt2.json", "data/cost.json", "data/scheduleListDt2.json"]
+            }
+        },
+        {
+            "name": "volume_id",
+            "type": {
+                "type": "string",
+                "logicalType": "volume_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["id"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "customer_id",
+            "type": {
+                "type": "string",
+                "logicalType": "customer_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["customerId"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "system_id",
+            "type": {
+                "type": "string",
+                "logicalType": "system_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["systemId"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "system_name",
+            "type": {
+                "type": "string",
+                "logicalType": "system_name"
+            },
+            "validator": {
+                "aggregator": [["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["name"]],
+                "input_filepath": ["data/systemsDt2.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "vol_coll_id",
+            "type": {
+                "type": "string",
+                "logicalType": "vol_coll_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["id"]],
+                "input_filepath": ["data/VCDt2.json"]
+            }
+        },
+        {
+            "name": "name",
+            "type": {
+                "type": "string",
+                "logicalType": "name"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["name"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "capacity_used",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_used"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["total_usage_bytes"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "capacity_free",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_free"
+            },
+            "validator": {
+                "aggregator": [["multiply", 1, 1], ["multiply", 2, 1], ["subtract", 3, 2]],
+                "input_field": [["size", "total_usage_bytes"]],
+                "input_filepath": ["data/volumesDt2.json"],
+                "number": [1048576, 1, ""]
+            } 
+        },
+        {
+            "name": "capacity_total",
+            "type": {
+                "type": "double",
+                "logicalType": "capacity_total"
+            },
+            "validator": {
+                "aggregator": [["multiply", 1, 1]],
+                "input_field": [["size"]],
+                "input_filepath": ["data/volumesDt2.json"],
+                "number": [1048576]
+            }
+        },
+        {
+            "name": "prov_type",
+            "type": {
+                "type": "string",
+                "logicalType": "prov_type"
+            },
+            "validator": {
+                "aggregator": [["compare", 1, 1]],
+                "relational_operator": ["equalTo"],
+                "input_field": [["thinly_provisioned"]],
+                "input_filepath": ["data/volumesDt2.json"],
+                "compare_val": [true],
+                "output_cmp_with": ["Thin", "Thick"]
+            }
+        },
+        {
+            "name": "active",
+            "type": {
+                "type": "boolean",
+                "logicalType": "active"
+            },
+            "validator": {
+                "aggregator": [["compare", 1, 1]],
+                "relational_operator": ["greaterThan"],
+                "input_field": [["iops-total-avg_latest"]],
+                "input_filepath": ["data/volumeIODt2.json"],
+                "compare_val": [1],
+                "output_cmp_with": [true, false]
+            }
+        },
+        {
+            "name": "is_connected",
+            "type": {
+                "type": "boolean",
+                "logicalType": "is_connected"
+            },
+            "validator": {
+                "aggregator": [["directCompare", 1, 1]],
+                "compare_val": [true]
+            }
+        },
+        {
+            "name": "is_replicated",
+            "type": {
+                "type": "boolean",
+                "logicalType": "is_replicated"
+            },
+            "validator": {
+                "aggregator": [["compare", 1, 1], ["compare", 2, 1], ["compare", 3, 1], ["logicalCompare", 4, 3]],
+                "relational_operator": ["equalTo", "equalTo", "equalTo"],
+                "logical_operator": ["or", "and"],
+                "input_field": [["replication_role", "replication_role", "protection_type"]],
+                "input_filepath": ["data/volumesDt2.json"],
+                "compare_val": ["synchronous_downstream", "periodic_snapshot_downstream", "remote"],
+                "output_cmp_with": [true, false]
+            }
+        },
+        {
+            "name": "has_multiple_replication_partners",
+            "type": {
+                "type": "boolean",
+                "logicalType": "has_multiple_replication_partners"
+            },
+            "validator": {
+                "aggregator": [["countCompare", 1, 1]],
+                "relational_operator": ["isNotEqualTo"],
+                "input_field": [["downstream_partner_id"]],
+                "input_filepath": ["data/scheduleListDt2.json"],
+                "countCompare_val": [2],
+                "compare_val": [""],
+                "output_cmp_with": [true, false]
+            }
+        },
+        {
+            "name": "app_id",
+            "type": {
+                "type": "string",
+                "logicalType": "app_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["perfpolicy_id"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "app_name",
+            "type": {
+                "type": "string",
+                "logicalType": "app_name"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["perfpolicy_name"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "cost",
+            "type": {
+                "type": "double",
+                "logicalType": "cost"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["addMonth", 1, 2], ["compare", 6, 1], ["divide", 3, 2], ["multiply", 5, 1], ["multiply", 8, 2]],
+                "relational_operator": ["", "", "", "", "", "greaterThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"], ["total_usage_bytes"]],
+                "input_filepath": ["data/cost.json", "data/systemsDT2.json", "data/volumesDt2.json"],
+                "compare_val": ["", "", "", "", "", "current_date"],
+                "number": ["", "", "", "", 1, "", "", ""],
+                "intermediate_cmp_with": ["", "", "", "", "", 0.00, "", "", ""],
+                "null_val_cmp": [0.00]
+            }
+        },
+        {
+            "name": "cost_per_gb",
+            "type": {
+                "type": "double",
+                "logicalType": "cost_per_gb"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["addMonth", 1, 2], ["compare", 5, 1], ["divide", 3, 2], ["multiply", 7, 1]],
+                "relational_operator": ["", "", "", "", "greaterThan"],
+                "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"]],
+                "input_filepath": ["data/cost.json", "data/systemsDT2.json"],
+                "compare_val": ["", "", "", "", "current_date"],
+                "number": ["", "", "", "", "", "", 1000000000],
+                "intermediate_cmp_with": ["", "", "", "", 0.00, "", ""],
+                "null_val_cmp": [0.00]
+            }
+        },
+        {
+            "name": "currency",
+            "type": {
+                "type": "string",
+                "logicalType": "currency"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["directMapping", 1, 1]],
+                "input_field": [["costDetails-currencyType"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "city",
+            "type": {
+                "type": "string",
+                "logicalType": "city"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-city"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "country",
+            "type": {
+                "type": "string",
+                "logicalType": "country"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-country"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "state",
+            "type": {
+                "type": "string",
+                "logicalType": "state"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-state"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [""]
+            }
+        },
+        {
+            "name": "postal_code",
+            "type": {
+                "type": "int",
+                "logicalType": "postal_code"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["isNull", 1, 1], ["directMapping", 1, 1]],
+                "input_field": [["locationDetails-postalCode"]],
+                "input_filepath": ["data/cost.json"],
+                "null_val_cmp": [0]
+            }
+        },
+        {
+            "name": "loc_lattitude",
+            "type": {
+                "type": "string",
+                "logicalType": "loc_lattitude"
+            },
+            "validator": {
+                "aggregator": [["passing", 1, 1]]
+            }
+        },
+        {
+            "name": "loc_longitude",
+            "type": {
+                "type": "string",
+                "logicalType": "loc_longitude"
+            },
+            "validator": {
+                "aggregator": [["passing", 1, 1]]
+            }
+        },
+        {
+            "name": "io_activity",
+            "type": {
+                "type": "double",
+                "logicalType": "io_activity"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["iops-total-avg_latest"]],
+                "input_filepath": ["data/volumeIODt2.json"]
+            }
+        },
+        {
+            "name": "creation_time",
+            "type": {
+                "type": "long",
+                "logicalType": "creation_time"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["creation_time"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "update_time",
+            "type": {
+                "type": "long",
+                "logicalType": "update_time"
+            },
+            "validator": {
+                "aggregator": [["epochConverter", 1, 1]],
+                "input_field": [["collectionTimeUTC"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "partitionKey",
+            "type": {
+                "type": "string",
+                "logicalType": "partitionKey"
+            },
+            "validator": {
+                "aggregator": [["passing"], ["directMapping", 1, 1]],
+                "input_field": [["partitionKey"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        },
+        {
+            "name": "collection_id",
+            "type": {
+                "type": "string",
+                "logicalType": "collection_id"
+            },
+            "validator": {
+                "aggregator": [["directMapping", 1, 1]],
+                "input_field": [["collectionId"]],
+                "input_filepath": ["data/volumesDt2.json"]
+            }
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000008",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000009",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000001",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000010",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000002",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000008",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000002",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000009",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000002",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000010",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000003",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000008",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000003",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000009",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000003",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000010",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000004",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000008",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000004",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000009",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    },
+    {
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "systemId": "003a28a43105d127d7000000000000000000000004",
+        "volumeCollectionId": "073a28a43105d127d7000000000000000000000005",
+        "downstream_partner_id": "",
+        "schedule_id": "0c3a28a43105d127d7000000000000000000000010",
+        "collectionId": "collection-id_1b",
+        "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
+    }
+]

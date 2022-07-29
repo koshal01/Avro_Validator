@@ -1,0 +1,44 @@
+For Systems:
+
+systemdataset
+	.as("system")
+	.join(capacitydataset.as("cap"), systemdataset("id") === capacitydataset("systemid") && systemdataset("collectionId") === capacitydataset("collectionId") ,"left") //&& systemdataset("customerId") === capacitydataset("customerId")
+	.join(costAndLocationData.as("costLoc"),systemdataset("id") === costAndLocationData("arrayId") && systemdataset("customerId") === costAndLocationData("customerId") ,"left")
+	.select(
+		col("system.id") as "system_id",
+		col("system.customerId") as "customer_id",
+		col("system.displayname") as "name",
+		when(col("costLoc.currencyType").isNull,"").otherwise(col("costLoc.currencyType")).alias("currency"),
+		when(col("costLoc.city").isNull,"").otherwise(col("costLoc.city")).alias("city"),
+		when(col("costLoc.state").isNull,"").otherwise(col("costLoc.state")).alias("state"),
+		when(col("costLoc.country").isNull,"").otherwise(col("costLoc.country")).alias("country"),
+		when(col("costLoc.monthsToDepreciate").isNull,0).otherwise(col("costLoc.monthsToDepreciate")).alias("months_to_depreciate"),
+		when(col("costLoc.depreciationStartDate").isNull,"").otherwise(col("costLoc.depreciationStartDate")).alias("depreciation_start_date"),
+		when(col("costLoc.depreciationStartDate").isNull,true)
+			.when(date_format(current_timestamp(),"yyyy-MM-dd") > add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"),col("costLoc.monthsToDepreciate")), true).otherwise(false).alias("is_depreciated"),
+		when(col("costLoc.postalCode").isNull, 0).otherwise(col("costLoc.postalCode")).alias("postal_code"),
+		lit("") as "loc_lattitude",
+		lit("") as "loc_longitude",
+		lit("deviceType1") as "device_type",
+		when(col("cap.capacityByTier.totalUsed").isNull, 0.00).otherwise(round(col("cap.capacityByTier.totalUsed").cast("Double"),2)).alias("capacity_used"),
+		when(col("cap.capacityByTier.usableCapacity").isNull, 0.00).otherwise(round(col("cap.capacityByTier.usableCapacity").cast("Double"),2)).alias("capacity_total"),
+		when(col("cap.capacityByTier.usableCapacity").isNull || col("cap.capacityByTier.totalUsed").isNull, 0.00).otherwise(round((col("cap.capacityByTier.usableCapacity") - col("cap.capacityByTier.totalUsed")).cast("Double"),2)).alias("capacity_free"),
+		lit(" ") as "domain_name",
+		col("system.softwareVersions.fullVersion") as "current_version",
+		when(col("costLoc.cost").isNull, 0.00).otherwise(round(col("costLoc.cost").cast("Double"),2)).alias("cost"),
+		when(col("costLoc.cost").isNull, 0.00).otherwise(round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity") / 1073741824)),2)).alias("cost_per_gb"),
+		to_timestamp(col("system.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long")*1000 as "update_time",
+		col("system.partitionKey") as "partitionKey",
+		col("system.collectionId") as "collection_id"
+    )
+
+?new Logic
+when(col("cap.capacityByTier.totalUsed").isNull, 0.00).
+	otherwise(round((col("cap.capacityByTier.totalUsed")*1048576).cast("Double"),2)).alias("capacity_used"),
+when(col("cap.capacityByTier.usableCapacity").isNull, 0.00).
+	otherwise(round((col("cap.capacityByTier.usableCapacity")*1048576).cast("Double"),2)).alias("capacity_total"),
+when(col("cap.capacityByTier.usableCapacity").isNull || col("cap.capacityByTier.totalUsed").isNull, 0.00).
+	otherwise(round((col("cap.capacityByTier.usableCapacity")*1048576 - col("cap.capacityByTier.totalUsed")*1048576).cast("Double"),2)).alias("capacity_free"),
+
+when(col("costLoc.cost").isNull, 0.00).
+	otherwise(round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity")*1048576 / 1000000000)),2)).alias("cost_per_gb"),

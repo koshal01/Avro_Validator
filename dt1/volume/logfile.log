@@ -1,0 +1,10 @@
+2022-07-27 11:47:50,175 : ERROR : logger : [9b886ab9ee4b900e8701a4313a1203f9] The value [5064622080000000.0] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,177 : ERROR : logger : [9a03ba0a57dc3cf4077f8d763205e29a] The value [5788139520000000.0] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,177 : ERROR : logger : [f9b994272a4c4dd9bdcd4a0f00a43c49] The value [1.433403392e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,186 : ERROR : logger : [ea77085d4f1a4a1a87d9f324f7addafb] The value [1.984954368e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,190 : ERROR : logger : [e5ef7bbb253e44dfa1651e8723810ca2] The value [2.796552192e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,190 : ERROR : logger : [e68d6074442e48c3a128e03ea3e6e8cd] The value [3.15097088e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,198 : ERROR : logger : [db9d7a5392f6c09f0677758fafeb0cb2] The value [1.983905792e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,198 : ERROR : logger : [97187a8a3698971f9c32bf1544be641z] The value [2.535456768e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,205 : ERROR : logger : [b70b42b9bb38143808611a7ccfd8d89m] The value [3.555721216e+16] for field [capacity_used] does not match with value in input JSON
+2022-07-27 11:47:50,205 : ERROR : logger : [57bebb667146ce6c57511a20a009bb47] The value [3.003121664e+16] for field [capacity_used] does not match with value in input JSON

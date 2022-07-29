@@ -1,0 +1,38 @@
+snapshot systemId and collection id should match with system capacity systemId and collectionId
+snapshot systemId and customerId should match with cost and location json systemId and customer id
+
+snapdataset
+    .as("snap")
+    .join(capacitydataset.as("cap"), snapdataset("systemId") === capacitydataset("systemid") && snapdataset("collectionId") === capacitydataset("collectionId"), "left")
+    .join(costAndLocationData.as("costLoc"), snapdataset("systemId") === costAndLocationData("arrayId") && snapdataset("customerId") === costAndLocationData("customerId"), "left")
+    .select(
+        col("snap.id") as "snapshot_id",
+        col("snap.volumeId") as "volume_id",
+        col("snap.customerId") as "customer_id",
+        col("snap.systemId") as "system_id",
+        col("snap.displayname") as "name",
+        lit(false)  as "has_snapshot_chain",
+        when(col("snap.expirationTime.Ms").isNull,true).when(col("snap.expirationTime.Ms") === 0,true).otherwise(false).alias("is_adhoc"),
+        lit(false)  as "is_online",
+        round((col("snap.sizeMiB")*1048576).cast("Double"),2) as "size",
+        when(col("costLoc.depreciationStartDate").isNull || col("cap.capacityByTier.usableCapacity").isNull , 0.00).
+            when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+            round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity") / 1073741824)) * (col("snap.sizeMiB") / 1024),2)).otherwise(0.00).alias("cost"),
+        when(col("costLoc.depreciationStartDate").isNull || col("cap.capacityByTier.usableCapacity").isNull , 0.00).
+            when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+            round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity") / 1073741824)),2)).otherwise(0.00).alias("cost_per_gb"),
+        when(col("costLoc.currencyType").isNull,"").otherwise(col("costLoc.currencyType")).alias("currency"),
+        col("snap.creationTime.Ms") as "creation_time",
+        to_timestamp(col("snap.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long")*1000 as "update_time",
+        col("snap.partitionKey") as "partitionKey",
+        col("snap.collectionId") as "collection_id"
+    )
+
+new changes
+when(col("costLoc.depreciationStartDate").isNull || col("cap.capacityByTier.usableCapacity").isNull , 0.00).
+    when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+    round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity")*1048576 / 1000000000)) * (col("snap.sizeMiB")*1048576 / 1000000000),2)).otherwise(0.00).alias("cost"),
+
+when(col("costLoc.depreciationStartDate").isNull || col("cap.capacityByTier.usableCapacity").isNull , 0.00).
+    when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+    round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity")*1048576 / 1000000000)),2)).otherwise(0.00).alias("cost_per_gb"),

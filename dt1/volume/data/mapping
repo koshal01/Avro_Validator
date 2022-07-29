@@ -1,0 +1,63 @@
+volbasedataset
+	.as("vb")
+	.join(volperfdataset.as("vp"), volbasedataset("id") === volperfdataset("volumeId") && volbasedataset("collectionId") === volperfdataset("collectionId"), "left")
+	.join(systemdataset.as("system"),volbasedataset("systemId") === systemdataset("id") && volbasedataset("collectionId") === systemdataset("collectionId"), "left")
+	.join(appsetdataset.as("appSet"), volbasedataset("appsetId") === appsetdataset("id") && volbasedataset("collectionId") === appsetdataset("collectionId"), "left")
+	.join(vlunDf.as("vlun"), volbasedataset("id") === vlunDf("volumeId") && volbasedataset("collectionId") === vlunDf("collectionId"), "left")
+	.join(capacitydataset.as("cap"), volbasedataset("systemId") === capacitydataset("systemid") && volbasedataset("collectionId") === capacitydataset("collectionId"), "left")
+	.join(costAndLocationData.as("costLoc"), volbasedataset("systemId") === costAndLocationData("arrayId") && volbasedataset("customerId") === costAndLocationData("customerId"), "left")
+	.select(
+		col("vb.id") as "volume_id",
+		col("vb.customerId") as "customer_id",
+		col("vb.systemId") as "system_id",
+		when(col("system.displayname").isNull,"").otherwise(col("system.displayname")).alias("system_name"),
+		when(col("appSet.id").isNull,"").otherwise(col("appSet.id")).alias("vol_coll_id"),
+		col("vb.displayname") as "name",
+		round(col("vb.usedSizeMiB"),2) as "capacity_used",
+		round((col("vb.totalSpaceMiB") - col("vb.usedSizeMiB")),2) as "capacity_free",
+		round(col("vb.totalSpaceMiB"),2) as "capacity_total",
+		when(col("vb.thinProvisioned") === true, "Thin").otherwise("Thick").alias("prov_type"),
+		
+		when(col("vp.iops.total.avgOfLatest").isNull,false).
+			when((col("vp.iops.total.avgOfLatest") > 0), true).otherwise(false).alias("active"),
+		
+		when(col("vlun.count").isNull,false).when(col("vlun.count") > 0, true).otherwise(false).alias("is_connected"),
+		when(col("appSet.replicationTraffic").isNull || col("appSet.replicationPartnerCount").isNull ,false).
+			when((col("appSet.replicationTraffic") === "Receiving" && col("appSet.replicationPartnerCount") > 0), true).otherwise(false).alias("is_replicated"),
+		when(col("appSet.replicationPartnerCount").isNull,false).when(col("appSet.replicationPartnerCount") > 1, true).otherwise(false).alias("has_multiple_replication_partners"),
+		when(col("appSet.appSetId").isNull,"").otherwise(col("appSet.appSetId")).alias("app_id"),
+		when(col("appSet.appSetType").isNull,"").otherwise(col("appSet.appSetType")).alias("app_name"),
+		
+		when(col("costLoc.depreciationStartDate").isNull, 0.00).
+			when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+			round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity") / 1073741824)) * (col("vb.usedSizeMiB") / 1024),2)).otherwise(0.00).alias("cost"),
+		when(col("costLoc.depreciationStartDate").isNull, 0.00).
+			when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+			round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity") / 1073741824)),2)).otherwise(0.00).alias("cost_per_gb"),
+		when(col("costLoc.currencyType").isNull,"").otherwise(col("costLoc.currencyType")).alias("currency"),
+		when(col("costLoc.city").isNull,"").otherwise(col("costLoc.city")).alias("city"),
+		when(col("costLoc.country").isNull,"").otherwise(col("costLoc.country")).alias("country"),
+		when(col("costLoc.state").isNull,"").otherwise(col("costLoc.state")).alias("state"),
+		when(col("costLoc.postalCode").isNull, 0).otherwise(col("costLoc.postalCode")).alias("postal_code"),
+		lit("") as "loc_lattitude",
+		lit("") as "loc_longitude",
+		
+		when(col("vp.iops.total.avgOfLatest").isNull, -1.00).otherwise(round(col("vp.iops.total.avgOfLatest"),2)).alias("io_activity"),
+		col("vb.creationTime.ms") as "creation_time",
+		to_timestamp(col("vb.collectionTimeUTC"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z").cast("Long") * 1000 as "update_time",
+		col("vb.partitionKey") as "partitionKey",
+		col("vb.collectionId") as "collection_id"
+	)
+
+? new Logic
+round(col("vb.usedSizeMiB")*1048576,2) as "capacity_used",
+round(((col("vb.totalSpaceMiB")*1048576) - (col("vb.usedSizeMiB")*1048576)),2) as "capacity_free",
+round(col("vb.totalSpaceMiB")*1048576,2) as "capacity_total",
+
+when(col("costLoc.depreciationStartDate").isNull, 0.00).
+	when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")),
+	round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity")*1048576 / 1000000000)) * (col("vb.usedSizeMiB")*1048576 / 1000000000),2)).otherwise(0.00).alias("cost"),
+
+when(col("costLoc.depreciationStartDate").isNull, 0.00).
+	when(date_format(current_timestamp(), "yyyy-MM-dd") < add_months(to_timestamp(col("costLoc.depreciationStartDate"), "yyyy-MM-dd HH:mm:ss.SSSSSSSSS Z z"), col("costLoc.monthsToDepreciate")), 
+	round((col("costLoc.cost") / (col("cap.capacityByTier.usableCapacity")*1048576 / 1000000000)),2)).otherwise(0.00).alias("cost_per_gb"),
