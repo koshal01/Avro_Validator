@@ -565,7 +565,6 @@ def idValueMatch(data, schema):
         output_cmp_with = validator["output_cmp_with"]
         val = output_cmp_with[0] if(val) else output_cmp_with[1]
 
-    print(val, data)
     if(dataType == "double" or dataType == "float"):
         val = round(val, 2)
         if not math.isclose(val, data, rel_tol=1e-2):
@@ -579,20 +578,20 @@ def idValueMatch(data, schema):
 def decode(data, *args):
     return data
 
-fastavro.write.LOGICAL_WRITERS["string-customerid"] = idValueMatch
-fastavro.read.LOGICAL_READERS["string-customerid"] = decode
+fastavro.write.LOGICAL_WRITERS["string-customer_id"] = idValueMatch
+fastavro.read.LOGICAL_READERS["string-customer_id"] = decode
 
-fastavro.write.LOGICAL_WRITERS["string-systemid"] = idValueMatch
-fastavro.read.LOGICAL_READERS["string-systemid"] = decode
+fastavro.write.LOGICAL_WRITERS["string-system_id"] = idValueMatch
+fastavro.read.LOGICAL_READERS["string-system_id"] = decode
 
-fastavro.write.LOGICAL_WRITERS["string-volumeid"] = idValueMatch
-fastavro.read.LOGICAL_READERS["string-volumeid"] = decode
+fastavro.write.LOGICAL_WRITERS["string-volume_id"] = idValueMatch
+fastavro.read.LOGICAL_READERS["string-volume_id"] = decode
 
-fastavro.write.LOGICAL_WRITERS["double-ioActivity"] = idValueMatch
-fastavro.read.LOGICAL_READERS["double-ioActivity"] = decode
+fastavro.write.LOGICAL_WRITERS["double-io_activity"] = idValueMatch
+fastavro.read.LOGICAL_READERS["double-io_activity"] = decode
 
-fastavro.write.LOGICAL_WRITERS["long-updateTime"] = idValueMatch
-fastavro.read.LOGICAL_READERS["long-updateTime"] = decode
+fastavro.write.LOGICAL_WRITERS["long-update_time"] = idValueMatch
+fastavro.read.LOGICAL_READERS["long-update_time"] = decode
 
 # loading avro schema
 with open("output.avsc", "r") as f:

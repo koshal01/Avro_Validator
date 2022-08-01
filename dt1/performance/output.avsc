@@ -9,7 +9,7 @@
             "default": null,
             "validator": {
                 "input_field" : [["volumeId"]],
-                "output_field" : [["volumeid"]],
+                "output_field" : [["volume_id"]],
                 "input_filepath": ["data/performance.json"]
             }
         },

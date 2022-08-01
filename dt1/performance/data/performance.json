@@ -37,7 +37,7 @@
                 "avg_1day": 0
             },
             "total": {
-                "avg_latest": 23,
+                "avgOfLatest": 23,
                 "avg_1hour": 0,
                 "avg_8hours": 0,
                 "avg_1day": 0
@@ -104,7 +104,7 @@
                 "avg_1day": 0
             },
             "total": {
-                "avg_latest": 0,
+                "avgOfLatest": 0,
                 "avg_1hour": 0,
                 "avg_8hours": 0,
                 "avg_1day": 0
@@ -171,7 +171,7 @@
                 "avg_1day": 0
             },
             "total": {
-                "avg_latest": 789,
+                "avgOfLatest": 789,
                 "avg_1hour": 0,
                 "avg_8hours": 0,
                 "avg_1day": 0
