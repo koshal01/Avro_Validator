@@ -1,0 +1,23 @@
+[
+    {
+        "customer_id": "fc5f41652a53497e88cdcebc715cc1cf",
+        "system_id": "003a28a43105d127d7000000000000000000000001",
+        "volume_id": "061154d271e0f6164e000000000000000000000053",
+        "io_activity": 5.5,
+        "update_time": 1657016238000
+    },
+    {
+        "customer_id": "fc5f41652a53497e88cdcebc715cc1cf",
+        "system_id": "003a28a43105d127d7000000000000000000000001",
+        "volume_id": "061154d271e0f6164e000000000000000000000052",
+        "io_activity": 16.0,
+        "update_time": 1657016238000
+    },
+    {
+        "customer_id": "fc5f41652a53497e88cdcebc715cc1cf",
+        "system_id": "003a28a43105d127d7000000000000000000000002",
+        "volume_id": "061154d271e0f6164e000000000000000000000054",
+        "io_activity": 23.0,
+        "update_time": 1657016238000
+    }
+]

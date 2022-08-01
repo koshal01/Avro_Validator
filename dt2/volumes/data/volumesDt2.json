@@ -32,6 +32,7 @@
         "num_iscsi_connections": null,
         "num_fc_connections": null,
         "collectionId": "collection-id_1b",
+        "partitionKey": "iuydfghj",
         "collectionTimeUTC": "2022-07-05 10:17:18.945081908 +0000 UTC"
     },
     {

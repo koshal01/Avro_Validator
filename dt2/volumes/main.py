@@ -111,7 +111,7 @@ def mapFilesDictionary(validator):
         primary_key = output_json[i][output_field[0]] #output_map_value
 
         if(not isFound):
-            raise MapError(primary_key, primary_key, output_field[0])
+            raise MapError(primary_key, primary_key, output_field[0], input_filepaths[file])
 
         mapFiles_Index.update({filename[-1]: idxList})
 
@@ -299,12 +299,12 @@ def divide(validator, input_value_list, idx, cnt):
     for j in range(idx, idx+cnt):
         for k in range(len(input_value_list[j])):
             if input_value_list[j][k] == 0: 
-                raise ZeroDivisionError
+                raise ZeroDivisionError("Division by zero")
                 
             if firstTime:
                 if k+1 < len(input_value_list[j]):
                     if input_value_list[j][k+1] == 0: 
-                        raise ZeroDivisionError
+                        raise ZeroDivisionError("Division by zero")
                     val /= input_value_list[j][k+1]
                 firstTime = False
             else:
@@ -679,6 +679,10 @@ output_schema = fastavro.parse_schema(json.loads(output_sc))
 filename = "data/output.json"
 output_json = readFile(filename)
 
+#creating an avro file
+with open("output.avro", "wb") as f:
+    pass
+
 # writing into avro file
 for record in output_json:
     try:
@@ -687,8 +691,3 @@ for record in output_json:
     except (ValueError, TypeError, NotFoundError, MapError, KeyError, ZeroDivisionError, IOError) as err:
         logger.error(err)
     i = i + 1
-
-# #reading from avro file
-for user in reader(open("output.avro", "rb")):
-    print(json.dumps(user, indent=4))
-

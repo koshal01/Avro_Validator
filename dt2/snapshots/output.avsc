@@ -22,7 +22,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["id"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -34,7 +34,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["vol_id"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -46,7 +46,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["customerId"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -58,7 +58,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["systemId"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -70,7 +70,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["name"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -84,7 +84,7 @@
                 "relational_operator": ["equalTo", "equalTo"],
                 "logical_operator": ["and"],
                 "input_field": [["schedule_id", "schedule_name"]],
-                "input_filepath": ["data/snapshotsDT2.json"],
+                "input_filepath": ["data/snapshotsDt2.json"],
                 "compare_val": ["", ""],
                 "output_cmp_with": [false, true]
             }
@@ -99,7 +99,7 @@
                 "aggregator": [["passing", 1, 1], ["compare", 1, 1]],
                 "relational_operator": ["equalTo"],
                 "input_field": [["is_manually_managed"]],
-                "input_filepath": ["data/snapshotsDT2.json"],
+                "input_filepath": ["data/snapshotsDt2.json"],
                 "compare_val": ["true"],
                 "output_cmp_with": [true, false]
             }
@@ -113,7 +113,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["online"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -125,7 +125,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["size"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -138,7 +138,7 @@
                 "aggregator": [["isNull", 1, 1], ["isNull", 4, 1], ["addMonth", 1, 2], ["compare", 6, 1], ["divide", 3, 2], ["multiply", 5, 1], ["multiply", 8, 2]],
                 "relational_operator": ["", "", "", "", "", "greaterThan"],
                 "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"], ["size"]],
-                "input_filepath": ["data/cost.json", "data/systemsDT2.json", "data/snapshotsDT2.json"],
+                "input_filepath": ["data/cost.json", "data/systemsDt2.json", "data/snapshotsDt2.json"],
                 "compare_val": ["", "", "", "", "", "current_date"],
                 "number": ["", "", "", "", 1, "", "", ""],
                 "intermediate_cmp_with": ["", "", "", "", "", 0.00, "", ""],
@@ -155,7 +155,7 @@
                 "aggregator": [["isNull", 1, 1], ["isNull", 4, 1], ["addMonth", 1, 2], ["compare", 5, 1], ["divide", 3, 2], ["multiply", 7, 1]],
                 "relational_operator": ["", "", "", "", "greaterThan"],
                 "input_field": [["costDetails-depreciationStartDate", "costDetails-monthsToDepreciate", "costDetails-cost"], ["usable_capacity_bytes"]],
-                "input_filepath": ["data/cost.json", "data/systemsDT2.json"],
+                "input_filepath": ["data/cost.json", "data/systemsDt2.json"],
                 "compare_val": ["", "", "", "", "current_date"],
                 "number": ["", "", "", "", "", "", 1000000000],
                 "intermediate_cmp_with": ["", "", "", "", 0.00, "", ""],
@@ -184,7 +184,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["creation_time"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -196,7 +196,7 @@
             "validator": {
                 "aggregator": [["epochConverter", 1, 1]],
                 "input_field": [["collectionTimeUTC"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -208,7 +208,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["partitionKey"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         },
         {
@@ -220,7 +220,7 @@
             "validator": {
                 "aggregator": [["directMapping", 1, 1]],
                 "input_field": [["collectionId"]],
-                "input_filepath": ["data/snapshotsDT2.json"]
+                "input_filepath": ["data/snapshotsDt2.json"]
             }
         }
     ]

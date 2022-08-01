@@ -9,7 +9,7 @@
             "default": null,
             "validator": {
                 "input_field" : [["id"], ["id", "collectionId"], ["volumeId", "collectionId"], ["id", "collectionId"], ["arrayId", "customerId"], ["volumeCollectionId", "collectionId"]],
-                "output_field" : [["volume_id"], ["vol_coll_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "collectionId"], ["system_id", "customer_id"],  ["vol_coll_id", "collection_id"]],
+                "output_field" : [["volume_id"], ["vol_coll_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "collection_id"], ["system_id", "customer_id"],  ["vol_coll_id", "collection_id"]],
                 "input_filepath": ["data/volumesDt2.json", "data/VCDt2.json", "data/volumeIODt2.json", "data/systemsDt2.json", "data/cost.json", "data/scheduleListDt2.json"]
             }
         },

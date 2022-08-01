@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "arrayId": "001154d271e0f6164e000000000000000000000001",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "locationDetails": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "postalCode": 560001
+        },
+        "costDetails": {
+            "cost": 500,
+            "currencyType": null,
+            "depreciationStartDate": "",
+            "monthsToDepreciate": 24
+        }
+    }
+]

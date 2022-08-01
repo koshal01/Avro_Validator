@@ -1,38 +1,4 @@
-2022-07-26 18:29:38,623 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,632 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,632 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,640 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,649 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,649 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,657 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,665 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,665 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,673 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,681 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,681 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,689 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,697 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,697 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,705 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,713 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,721 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,721 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,730 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,738 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,741 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,749 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,758 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,766 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,766 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,774 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,783 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,790 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,790 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,799 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,807 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,816 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,824 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,832 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,841 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,849 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
-2022-07-26 18:29:38,858 : ERROR : logger : [001154d271e0f6164e000000000000000000000001] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] does not match with value in input JSON
+2022-08-01 17:40:54,164 : WARNING : logger : Value MisMatch: [011154d271e0f6164e000000000000007200000053] The value [fc5f41652a53497e88cdcebc715cc1cf] for field [customer_id] mismatched
+2022-08-01 17:40:54,164 : WARNING : logger : Value MisMatch: [011154d271e0f6164e000000000000007200000053] The value [001154d271e0f6164e000000000000000000000001] for field [system_id] mismatched
+2022-08-01 17:40:54,164 : WARNING : logger : Value MisMatch: [011154d271e0f6164e000000000000007200000053] The value [anand-vol-col-daily-2022-02-17::00:00:00.000] for field [name] mismatched
+2022-08-01 17:40:54,165 : ERROR : logger : type str doesn't define __round__ method

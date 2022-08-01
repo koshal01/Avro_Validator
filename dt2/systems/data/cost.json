@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "arrayId": "003a28a43105d127d7000000000000000000000001",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "locationDetails": {
+            "city": "",
+            "state": "",
+            "country": "",
+            "postalCode": null
+        },
+        "costDetails": {
+            "cost": 0.0,
+            "currencyType": null,
+            "depreciationStartDate": "",
+            "monthsToDepreciate": 0
+        }
+    }
+]
