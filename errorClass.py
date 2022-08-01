@@ -9,11 +9,12 @@ class NotFoundError(Exception):
         return f'Value MisMatch: [{self.id}] The value [{self.value}] for field [{self.field}] mismatched'
 
 class MapError(Exception):
-    def __init__(self, id, value, field, *args):
+    def __init__(self, id, value, field, file, *args):
         super().__init__(args)
         self.id = id
         self.value = value
         self.field = field
+        self.file = file
 
     def __str__(self):
-        return f'Mapping Error: The value [{self.value}] for field [{self.field}] was not found in input JSON'
+        return f'Mapping Error: The value [{self.value}] for field [{self.field}] was not found in input file [{self.file}]'
