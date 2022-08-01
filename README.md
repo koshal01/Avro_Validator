@@ -21,8 +21,11 @@ In metadata under the field name validator all the rules are specified
 <hr>
 
 ## Install
+Python Version: **Python 3.1**
+
 ```
 pip install fastavro
+pip install python-dateutil
 ```
 
 <hr>
