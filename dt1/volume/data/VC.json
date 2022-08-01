@@ -1,0 +1,80 @@
+[
+    {
+        "appSetType": "",
+        "id": "d8d35954e2a627b31039b9a2960dad49",
+        "systemId": "4UW0002888",
+        "displayname": "Application Set",
+        "domain": "-",
+        "appSetId": "19",
+        "name": "RCP_fcnt_grp_s2888_1",
+        "comment": "",
+        "members": [
+            "rcvv_s2888.109",
+            "rcvv_s2888.119",
+            "rcvv_s2888.129",
+            "rcvv_s2888.139",
+            "rcvv_s2888.149",
+            "rcvv_s2888.19",
+            "rcvv_s2888.29",
+            "rcvv_s2888.39",
+            "rcvv_s2888.49",
+            "rcvv_s2888.59",
+            "rcvv_s2888.69",
+            "rcvv_s2888.79",
+            "rcvv_s2888.89",
+            "rcvv_s2888.9",
+            "rcvv_s2888.99"
+        ],
+        "kvPairsPresent": false,
+        "appSetName": "",
+        "appSetImportance": "",
+        "appSetBusinessUnit": "",
+        "appSetComments": "",
+        "appSetExcludeAIQoS": "",
+        "exportStatus": "PARTIALLY_EXPORTED",
+        "vvSetType": "VVSET",
+        "snapSetParentId": -1,
+        "snapSetParentName": "",
+        "sizeMiB": 245760,
+        "associatedLink": [
+            {
+                "type": "systems",
+                "resourceUri": "/api/v1/storage-systems/device-type1/4UW0002888"
+            },
+            {
+                "type": "volumes",
+                "resourceUri": "/api/v1/storage-systems/device-type1/4UW0002888/applicationsets/d8d35954e2a627b31039b9a2960dad49/volumes"
+            },
+            {
+                "type": "capacity-stats",
+                "resourceUri": "/api/v1/storage-systems/device-type1/4UW0002888/applicationsets/d8d35954e2a627b31039b9a2960dad49/capacity-stats"
+            },
+            {
+                "type": "snapsets",
+                "resourceUri": "/api/v1/storage-systems/device-type1/4UW0002888/applicationsets/d8d35954e2a627b31039b9a2960dad49/snapsets"
+            }
+        ],
+        "remoteRecoveryPoint": null,
+        "replicationTraffic": "Sending",
+        "replicationPartner": [
+            {
+                "partnerSystem": "s2889",
+                "replicationPartner": "fcnt_grp_s2889_1"
+            }
+        ],
+        "replicationPartnerCount": 1,
+        "isSyncAllowed": true,
+        "isOverrideAllowed": false,
+        "isFailoverAllowed": true,
+        "isPrimary": true,
+        "zeroRtoConfig": "APP",
+        "nonZeroRtoConfig": null,
+        "replicationType": "Sync",
+        "customerId": "fc5f41652a53497e88cdcebc715cc1cf",
+        "replicationState": "Started",
+        "generation": 1650380061,
+        "type": "application-set",
+        "initiators": [],
+        "collectionId": "collection-id_1b"
+    }
+]

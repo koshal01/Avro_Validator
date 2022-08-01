@@ -9,7 +9,7 @@
             "default": null,
             "validator": {
                 "input_field" : [["id"], ["id", "collectionId"], ["volumeId", "collectionId"], ["id", "collectionId"], ["volumeId", "collectionId"], ["arrayId", "customerId"], ["systemid", "collectionId"]],
-                "output_field" : [["volume_id"], ["vol_coll_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "collection_id"], ["volume_id", "collectionId"], ["system_id", "customer_id"],  ["system_id", "collection_id"]],
+                "output_field" : [["volume_id"], ["vol_coll_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "collection_id"], ["volume_id", "collection_id"], ["system_id", "customer_id"],  ["system_id", "collection_id"]],
                 "input_filepath": ["data/volumes.json", "data/VC.json", "data/performance.json", "data/systems.json", "data/vlun.json", "data/cost.json", "data/capacity.json"]
             }
         },
@@ -112,7 +112,7 @@
                 "aggregator": [["multiply", 1, 1], ["multiply", 2, 1], ["subtract", 3, 2]],
                 "input_field": [["totalSpaceMiB", "usedSizeMiB"]],
                 "input_filepath": ["data/volumes.json"],
-                "number": [1048576, 1048576]
+                "number": [1048576, 1048576, ""]
             } 
         },
         {
@@ -140,7 +140,7 @@
                 "input_field": [["thinProvisioned"]],
                 "input_filepath": ["data/volumes.json"],
                 "compare_val": [true],
-                "output_cmp_with": ["thin", "thick"]
+                "output_cmp_with": ["Thin", "Thick"]
             }
         },
         {
