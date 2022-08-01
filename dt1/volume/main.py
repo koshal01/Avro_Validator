@@ -687,7 +687,7 @@ for record in output_json:
     try:
         j = 0 #for acessing validator from each field in current json
         writer(open("output.avro", "wb"), output_schema, [record]) 
-    except (ValueError, TypeError, NotFoundError, KeyError, ZeroDivisionError, IOError) as err:
+    except (ValueError, TypeError, NotFoundError, MapError, KeyError, ZeroDivisionError, IOError) as err:
         logger.error(err)
     i = i + 1
 
