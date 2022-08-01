@@ -111,7 +111,7 @@ def mapFilesDictionary(validator):
         primary_key = output_json[i][output_field[0]] #output_map_value
 
         if(not isFound):
-            raise MapError(primary_key, primary_key, output_field[0])
+            raise MapError(primary_key, primary_key, output_field[0], input_filepaths[file])
 
         mapFiles_Index.update({filename[-1]: idxList})
 
