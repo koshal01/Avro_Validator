@@ -225,7 +225,7 @@
                 "aggregator": [["isNull", 1, 1], ["isNull", 2, 1], ["multiply", 1, 1], ["multiply", 2, 1], ["subtract", 3, 2]],
                 "input_field": [["capacityByTier-usableCapacity", "capacityByTier-totalUsed"]],
                 "input_filepath": ["data/capacity.json"],
-                "number": [1048576, 1048576],
+                "number": [1048576, 1048576, ""],
                 "null_val_cmp": [0.00, 0.00]
             } 
         },

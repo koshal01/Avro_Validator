@@ -184,7 +184,6 @@ def isNull(validator, input_value_list, idx, cnt):
 
     msg = "NotFoundError(primary_key, data, output_field)"
     null_val_cmp = validator["null_val_cmp"]
-
     for j in range(idx, idx+cnt):
         for k in range(len(input_value_list[j])):
             if not input_value_list[j][k]:
@@ -299,12 +298,12 @@ def divide(validator, input_value_list, idx, cnt):
     for j in range(idx, idx+cnt):
         for k in range(len(input_value_list[j])):
             if input_value_list[j][k] == 0: 
-                raise ZeroDivisionError
+                raise ZeroDivisionError("Division by zero")
                 
             if firstTime:
                 if k+1 < len(input_value_list[j]):
                     if input_value_list[j][k+1] == 0: 
-                        raise ZeroDivisionError
+                        raise ZeroDivisionError("Division by zero")
                     val /= input_value_list[j][k+1]
                 firstTime = False
             else:
@@ -565,7 +564,6 @@ def idValueMatch(data, schema):
         output_cmp_with = validator["output_cmp_with"]
         val = output_cmp_with[0] if(val) else output_cmp_with[1]
 
-    print(val, data)
     if(dataType == "double" or dataType == "float"):
         val = round(val, 2)
         if not math.isclose(val, data, rel_tol=1e-2):
@@ -637,6 +635,10 @@ output_schema = fastavro.parse_schema(json.loads(output_sc))
 filename = "data/output.json"
 output_json = readFile(filename)
 
+#creating an avro file
+with open("output.avro", "wb") as f:
+    pass
+
 # writing into avro file
 for record in output_json:
     try:
@@ -646,6 +648,6 @@ for record in output_json:
         logger.error(err)
     i = i + 1
 
-# #reading from avro file
-for user in reader(open("output.avro", "rb")):
-    print(json.dumps(user, indent=4))
+#reading from avro file
+# for user in reader(open("output.avro", "rb")):
+#     logger.info("The record %s is correct", user)

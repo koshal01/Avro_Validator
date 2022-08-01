@@ -1,23 +1,23 @@
 [
     {
-        "customerid": "87f8983af93911eb864022cfbc47fbb1",
-        "systemid": "003a28a43105d127d7000000000000000000000002",
-        "volumeid": "063a28a43105d127d7000000000000000000000002",
-        "ioActivity": 0.00,
-        "updateTime": 1653449195000
+        "customer_id": "87f8983af93911eb864022cfbc47fbb",
+        "system_id": "003a28a43105d127d7000000000000000000000002",
+        "volume_id": "063a28a43105d127d7000000000000000000000002",
+        "io_activity": 0.00,
+        "update_time": 1653449196000
     },
     {
-        "customerid": "87f8983af93911eb864022cfbc47faa1",
-        "systemid": "003a28a43105d127d7000000000000000000000001",
-        "volumeid": "063a28a43105d127d7000000000000000000000001",
-        "ioActivity": 23.00,
-        "updateTime": 1653449195000
+        "customer_id": "87f8983af93911eb864022cfbc47faa1",
+        "system_id": "003a28a43105d127d7000000000000000000000001",
+        "volume_id": "063a28a43105d127d7000000000000000000000001",
+        "io_activity": 23.00,
+        "update_time": 1653449195000
     },
     {
-        "customerid": "87f8983af93911eb864022cfbc47fcc1",
-        "systemid": "003a28a43105d127d7000000000000000000000003",
-        "volumeid": "063a28a43105d127d7000000000000000000000003",
-        "ioActivity": 789.00,
-        "updateTime": 1653449195000
+        "customer_id": "87f8983af93911eb864022cfbc47fcc1",
+        "system_id": "003a28a43105d127d7000000000000000000000003",
+        "volume_id": "063a28a43105d127d7000000000000000000000003",
+        "io_activity": 789.00,
+        "update_time": 1653449195000
     }
 ]
